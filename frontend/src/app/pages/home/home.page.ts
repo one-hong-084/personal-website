@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { LanguageService } from '../../shared/services/language.service';
 import { TimelineService } from '../../shared/services/timeline.service';
 import { TimelineItem } from '../../shared/models/timeline.model';
@@ -66,28 +66,32 @@ export class HomePage {
     }
   };
 
-  projects: Project[] = [];
-  blogs: Blog[] = [];
-  timelineLatest$!: Observable<TimelineItem[]>;
+  projects$: Observable<Project[]>;
+  blogs$: Observable<Blog[]>;
+  timelineLatest$: Observable<TimelineItem[]>;
 
   constructor(private http: HttpClient, public lang: LanguageService, private timeline: TimelineService) {
     // Projects：按 updatedAt 降序取前 3
-    this.http.get<{ sections: [{ inputs: { items: Project[] } }] }>('assets/content/projects.json')
-      .subscribe(res => {
-        const items = res.sections?.[0]?.inputs?.items ?? [];
-        this.projects = items
-          .sort((a, b) => new Date(b.updatedAt!).getTime() - new Date(a.updatedAt!).getTime())
-          .slice(0, 3);
-      });
+    this.projects$ = this.http.get<{ sections: [{ inputs: { items: Project[] } }] }>('assets/content/projects.json')
+      .pipe(
+        map(res => {
+          const items = res.sections?.[0]?.inputs?.items ?? [];
+          return items
+            .sort((a, b) => new Date(b.updatedAt!).getTime() - new Date(a.updatedAt!).getTime())
+            .slice(0, 3);
+        })
+      );
 
     // Blog：按 updatedAt 降序取前 3
-    this.http.get<{ sections: [{ inputs: { items: Blog[] } }] }>('assets/content/blog.json')
-      .subscribe(res => {
-        const items = res.sections?.[0]?.inputs?.items ?? [];
-        this.blogs = items
-          .sort((a, b) => new Date(b.updatedAt!).getTime() - new Date(a.updatedAt!).getTime())
-          .slice(0, 3);
-      });
+    this.blogs$ = this.http.get<{ sections: [{ inputs: { items: Blog[] } }] }>('assets/content/blog.json')
+      .pipe(
+        map(res => {
+          const items = res.sections?.[0]?.inputs?.items ?? [];
+          return items
+            .sort((a, b) => new Date(b.updatedAt!).getTime() - new Date(a.updatedAt!).getTime())
+            .slice(0, 3);
+        })
+      );
 
     // Timeline：使用新的TimelineService
     this.timelineLatest$ = this.timeline.latest(3);

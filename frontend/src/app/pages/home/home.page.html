@@ -3,7 +3,9 @@
 
 <!-- 精选项目 -->
 <section class="section">
-  <app-projects-preview [inputs]="{ title: { zh: '精选项目', en: 'Featured Projects' }, items: projects }"></app-projects-preview>
+  <ng-container *ngIf="projects$ | async as projects">
+    <app-projects-preview [inputs]="{ title: { zh: '精选项目', en: 'Featured Projects' }, items: projects }"></app-projects-preview>
+  </ng-container>
   <div class="more-link">
     <a routerLink="/projects">{{ (lang.current$ | async) === 'zh' ? '查看全部项目 →' : 'View All Projects →' }}</a>
   </div>
@@ -11,7 +13,9 @@
 
 <!-- 精选文章 -->
 <section class="section">
-  <app-blog-preview [inputs]="{ title: { zh: '精选文章', en: 'Featured Articles' }, items: blogs }"></app-blog-preview>
+  <ng-container *ngIf="blogs$ | async as blogs">
+    <app-blog-preview [inputs]="{ title: { zh: '精选文章', en: 'Featured Articles' }, items: blogs }"></app-blog-preview>
+  </ng-container>
   <div class="more-link">
     <a routerLink="/blog">{{ (lang.current$ | async) === 'zh' ? '查看全部文章 →' : 'View All Articles →' }}</a>
   </div>
