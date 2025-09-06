@@ -1,0 +1,20 @@
+[
+  {
+    "id": "2025-09-04-ai-education",
+    "date": "2025-09-04",
+    "title": { "zh": "AI 赋能体育教学的五个关键点", "en": "Five Keys for AI-Enabled PE Teaching" },
+    "summary": { "zh": "从检测、反馈到评价的最小闭环实践", "en": "From detection to feedback and assessment" },
+    "image": "assets/images/articles/ai-pe.jpg",
+    "tags": ["AI","Education","PE"],
+    "link": "/blog/ai-education-keys"
+  },
+  {
+    "id": "2025-08-22-personal-site-ia",
+    "date": "2025-08-22",
+    "title": { "zh": "个人站点的信息架构是怎样定的？", "en": "How I designed my site's IA" },
+    "summary": { "zh": "从目标到模块，再到导航与聚合", "en": "From goals to modules and navigation" },
+    "image": "assets/images/articles/site-ia.jpg",
+    "tags": ["IA","Web"],
+    "link": "/blog/site-ia"
+  }
+]

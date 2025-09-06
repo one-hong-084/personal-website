@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2025-09-05-award",
+    "date": "2025-09-05",
+    "type": "award",
+    "title": { "zh": "市级教育信息化大赛三等奖", "en": "3rd Prize in City EduTech Contest" },
+    "summary": { "zh": "以AI双杠评分Demo参赛，完成端到端演示", "en": "Showcased end-to-end AI parallel-bars scoring demo" },
+    "image": "assets/images/timeline/award-20250905.jpg",
+    "tags": ["Award", "AI", "Education"],
+    "link": "/timeline/award-20250905"
+  },
+  {
+    "id": "2025-09-03-product",
+    "date": "2025-09-03",
+    "type": "product",
+    "title": { "zh": "发布个人网站 V1 原型", "en": "Released Personal Site V1 Prototype" },
+    "summary": { "zh": "完成 IA/原型与首页框架", "en": "Finished IA/wireframes and home skeleton" },
+    "image": "assets/images/timeline/site-v1.jpg",
+    "tags": ["Product", "Web", "Design"],
+    "link": "/projects/personal-site"
+  },
+  {
+    "id": "2025-09-01-skill",
+    "date": "2025-09-01",
+    "type": "skill",
+    "title": { "zh": "掌握 Ghost CMS 基础对接", "en": "Learned basics of Ghost CMS integration" },
+    "summary": { "zh": "创建内容模型与API拉取策略", "en": "Designed content model and API pulling strategy" },
+    "image": "assets/images/timeline/ghost.jpg",
+    "tags": ["Skill", "CMS", "API"],
+    "link": "/notes/ghost-cms"
+  },
+  {
+    "id": "2025-08-28-milestone",
+    "date": "2025-08-28",
+    "type": "milestone",
+    "title": { "zh": "技术栈定稿", "en": "Tech Stack Finalized" },
+    "summary": { "zh": "前端Angular/后端Express/数据库MongoDB", "en": "FE Angular / BE Express / DB MongoDB" },
+    "image": "assets/images/timeline/stack.jpg",
+    "tags": ["Milestone", "Tech", "Architecture"],
+    "link": "/timeline/tech-stack"
+  }
+]

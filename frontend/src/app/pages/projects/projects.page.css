@@ -1,0 +1,9 @@
+:root{ --border:#e5e7eb; --muted:#6b7280; }
+.wrap{ max-width:920px; margin:32px auto; padding:0 16px; }
+.grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; }
+.card{ border:1px solid var(--border); border-radius:12px; background:var(--bg); padding:12px; transition:transform .15s ease, box-shadow .15s ease; }
+.card:hover{ transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.06); }
+.cover{ width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px; margin-bottom:8px; }
+.muted{ color:var(--muted); }
+.tags{ display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 4px; }
+.tag{ font-size:12px; padding:4px 8px; border:1px solid var(--border); border-radius:999px; }

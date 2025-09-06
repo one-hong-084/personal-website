@@ -1,0 +1,18 @@
+<a class="card" [routerLink]="link && !link.startsWith('http') ? link : null" 
+   [href]="link && link.startsWith('http') ? link : null"
+   [attr.target]="link && link.startsWith('http') ? '_blank' : null" 
+   rel="noopener">
+  <div class="thumb">
+    <img [src]="image || 'assets/images/placeholder.webp'" [alt]="lang === 'zh' ? title.zh : title.en" loading="lazy">
+  </div>
+  <div class="meta">
+    <div class="row" *ngIf="date || (tags?.length)">
+      <span class="date" *ngIf="date">{{ date }}</span>
+      <span class="tags" *ngIf="tags?.length">
+        <span class="tag" *ngFor="let t of tags">#{{ t }}</span>
+      </span>
+    </div>
+    <h3 class="title">{{ lang === 'zh' ? title.zh : title.en }}</h3>
+    <p class="summary">{{ lang === 'zh' ? summary.zh : summary.en }}</p>
+  </div>
+</a>

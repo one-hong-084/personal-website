@@ -1,0 +1,18 @@
+{
+    "sections": [
+      {
+        "type": "hero",
+        "inputs": {
+          "headline": {
+            "zh": "批判性的探索者，创造性的执行者",
+            "en": "A Critical Explorer, A Creative Executor"
+          },
+          "subheadline": {
+            "zh": "把想象力与逻辑结合，把创意转化为真实价值。",
+            "en": "Merging imagination with logic to turn ideas into real impact."
+          }
+        }
+      }
+    ]
+  }
+  

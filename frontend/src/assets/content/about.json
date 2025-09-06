@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "inputs": { 
+        "data": { 
+          "title": { "zh": "你好，我是洪显学", "en": "Hello, I'm Hong Xianxue" },
+          "subtitle": { "zh": "AI 产品经理｜学习与分享", "en": "AI Product Manager | Learning & Sharing" }
+        } 
+      }
+    },
+    {
+      "type": "skills",
+      "inputs": { "tags": ["Angular", "Node.js", "MongoDB", "Ghost CMS", "TypeScript"] }
+    },
+    {
+      "type": "timeline",
+      "inputs": { 
+        "items": {
+          "zh": ["2025-09 站点启动", "2025-09 完成前端骨架", "2025-09 规划模块化结构"],
+          "en": ["2025-09 Site Launch", "2025-09 Frontend Framework Complete", "2025-09 Modular Structure Planning"]
+        }
+      }
+    }
+  ]
+}

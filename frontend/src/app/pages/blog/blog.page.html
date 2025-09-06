@@ -1,0 +1,18 @@
+<section class="wrap">
+    <h2>Blog</h2>
+    <div class="grid">
+      <article class="card" *ngFor="let b of items">
+        <img *ngIf="b.image?.src"
+             [src]="b.image?.src"
+             [alt]="b.image?.alt || b.title"
+             class="cover"
+             loading="lazy" />
+        <h3>{{ b.title }}</h3>
+        <p class="muted">{{ b.excerpt }}</p>
+        <small>{{ b.publishedAt | date:'yyyy-MM-dd' }} · {{ b.readingMinutes || 3 }} min read</small>
+        <br />
+        <a [routerLink]="['/blog', b.slug]">阅读全文 →</a>
+      </article>
+    </div>
+  </section>
+  

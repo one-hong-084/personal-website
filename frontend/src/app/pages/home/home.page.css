@@ -1,0 +1,24 @@
+.section {
+    margin: 48px auto;
+    max-width: 1000px;
+    padding: 0 16px;
+  }
+  
+  .more-link {
+    text-align: right;
+    margin-top: 12px;
+  }
+  .more-link a {
+    color: var(--brand);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .more-link a:hover {
+    text-decoration: underline;
+  }
+
+  /* Card Grid Styles */
+  .card-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .section-title { margin: 0 0 8px 0; }
+  .muted { color: var(--muted); }
+  

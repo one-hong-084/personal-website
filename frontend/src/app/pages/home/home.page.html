@@ -1,0 +1,46 @@
+<!-- Hero Section：首页开场视觉 -->
+<app-hero [inputs]="hero"></app-hero>
+
+<!-- 精选项目 -->
+<section class="section">
+  <app-projects-preview [inputs]="{ title: { zh: '精选项目', en: 'Featured Projects' }, items: projects }"></app-projects-preview>
+  <div class="more-link">
+    <a routerLink="/projects">{{ (lang.current$ | async) === 'zh' ? '查看全部项目 →' : 'View All Projects →' }}</a>
+  </div>
+</section>
+
+<!-- 精选文章 -->
+<section class="section">
+  <app-blog-preview [inputs]="{ title: { zh: '精选文章', en: 'Featured Articles' }, items: blogs }"></app-blog-preview>
+  <div class="more-link">
+    <a routerLink="/blog">{{ (lang.current$ | async) === 'zh' ? '查看全部文章 →' : 'View All Articles →' }}</a>
+  </div>
+</section>
+
+<!-- 最新动态 -->
+<section class="section timeline-preview">
+  <h2 class="section-title">
+    {{ (lang.current$ | async) === 'zh' ? '最新动态' : 'Latest Updates' }}
+  </h2>
+
+  <ng-container *ngIf="timelineLatest$ | async as latest; else loading">
+    <div *ngIf="latest.length; else empty" class="card-grid">
+      <app-card *ngFor="let item of latest; trackBy: trackById"
+        [lang]="(lang.current$ | async) || 'zh'"
+        [title]="item.title" 
+        [summary]="item.summary" 
+        [image]="item.image"
+        [date]="item.date" 
+        [tags]="item.tags" 
+        [link]="item.link || '/timeline'">
+      </app-card>
+    </div>
+  </ng-container>
+
+  <ng-template #loading><p class="muted">{{ (lang.current$ | async) === 'zh' ? '加载中…' : 'Loading…' }}</p></ng-template>
+  <ng-template #empty><p class="muted">{{ (lang.current$ | async) === 'zh' ? '暂无条目' : 'No entries yet' }}</p></ng-template>
+
+  <div class="more-link">
+    <a routerLink="/timeline">{{ (lang.current$ | async) === 'zh' ? '查看完整时间线 →' : 'View Full Timeline →' }}</a>
+  </div>
+</section>

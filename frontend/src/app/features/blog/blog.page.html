@@ -1,0 +1,24 @@
+<section class="section blog-page">
+  <ng-container *ngIf="groups$ | async as groups; else loading">
+    <div *ngIf="groups.length; else empty">
+      <section class="year-block" *ngFor="let g of groups">
+        <h2 class="year">{{ g.year }}</h2>
+        <div class="card-grid">
+          <app-card *ngFor="let item of g.items; trackBy: trackById"
+            [lang]="(lang.current$ | async) || 'zh'"
+            [title]="item.title" 
+            [summary]="item.summary" 
+            [image]="item.image"
+            [date]="item.date" 
+            [tags]="item.tags" 
+            [link]="item.link">
+          </app-card>
+        </div>
+      </section>
+    </div>
+  </ng-container>
+
+  <ng-template #loading><p class="muted">{{ (lang.current$ | async) === 'zh' ? '加载中…' : 'Loading…' }}</p></ng-template>
+  <ng-template #empty><p class="muted">{{ (lang.current$ | async) === 'zh' ? '暂无文章' : 'No articles yet' }}</p></ng-template>
+</section>
+  
