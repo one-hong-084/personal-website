@@ -5,5 +5,12 @@
     </div>
   
     <!-- 根据当前语言显示内容 -->
-    <h1 class="headline">{{ getLocalizedText(inputs.headline) }}</h1>
-    <p class="subheadline">{{ getLocalizedText(inputs.subheadline) }}</p>
+    <h1 class="headline">
+      <ng-container *ngIf="(lang.current$ | async) === 'zh'">
+        <span class="headline-normal">批判性的</span><a routerLink="/timeline" class="headline-highlight headline-link">探索者</a>，<span class="headline-normal">创造性的</span><a routerLink="/projects" class="headline-highlight headline-link">执行者</a>
+      </ng-container>
+      <ng-container *ngIf="(lang.current$ | async) !== 'zh'">
+        A <span class="headline-normal">Critical</span> <a routerLink="/timeline" class="headline-highlight headline-link">Explorer</a>, A <span class="headline-normal">Creative</span> <a routerLink="/projects" class="headline-highlight headline-link">Executor</a>
+      </ng-container>
+    </h1>
+    <p class="subheadline">{{ (lang.current$ | async) === 'zh' ? inputs.subheadline.zh : inputs.subheadline.en }}</p>

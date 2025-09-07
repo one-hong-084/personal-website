@@ -30,8 +30,22 @@ describe('TimelinePage', () => {
     expect(req.request.method).toBe('GET');
     req.flush({
       items: [
-        { date: '2025-09-06T09:30:00Z', title: 'Home 首页完成', description: 'Hero + 精选' },
-        { date: '2025-09-05T14:00:00Z', title: 'AI Gym Demo 改版' }
+        { 
+          id: 'test-1',
+          date: '2025-09-06', 
+          title: { zh: 'Home 首页完成', en: 'Home Page Complete' }, 
+          summary: { zh: 'Hero + 精选', en: 'Hero + Featured' },
+          type: 'product',
+          tags: ['Product']
+        },
+        { 
+          id: 'test-2',
+          date: '2025-09-05', 
+          title: { zh: 'AI Gym Demo 改版', en: 'AI Gym Demo Redesign' },
+          summary: { zh: '双杠评分优化', en: 'Parallel bars scoring optimization' },
+          type: 'product',
+          tags: ['Product']
+        }
       ]
     });
 

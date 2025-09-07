@@ -1,98 +1,76 @@
 {
-  "sections": [
+  "items": [
     {
-      "type": "card-list",
-      "inputs": {
-        "title": { "zh": "项目列表", "en": "Projects" },
-        "items": [
-          {
-            "title": { "zh": "AI Gym - 双杠评分原型", "en": "AI Gym - Parallel Bars Scoring Prototype" },
-            "summary": { "zh": "基于关键点检测与时序分类的体测评分 Demo。", "en": "A physical test scoring demo based on keypoint detection and time series classification." },
-            "tags": [
-              "Computer Vision",
-              "Angular",
-              "MMPose"
-            ],
-            "link": "https://github.com/one-hong-084/AI_gym",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=31",
-              "alt": { "zh": "AI Gym 封面", "en": "AI Gym Cover" }
-            },
-            "updatedAt": "2025-09-05T14:00:00Z"
-          },
-          {
-            "title": { "zh": "个人展示网站", "en": "Personal Portfolio Website" },
-            "summary": { "zh": "Angular + Ghost CMS 的成长档案馆，配置驱动、少即是多。", "en": "A growth archive built with Angular + Ghost CMS, configuration-driven with minimal design philosophy." },
-            "tags": [
-              "Angular",
-              "Ghost CMS",
-              "MongoDB"
-            ],
-            "link": "https://xxlab.top",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=32",
-              "alt": { "zh": "个人网站封面", "en": "Personal Website Cover" }
-            },
-            "updatedAt": "2025-09-03T09:00:00Z"
-          },
-          {
-            "title": { "zh": "Pose Analysis 工具", "en": "Pose Analysis Tool" },
-            "summary": { "zh": "基于 MMPose 的动作捕捉与姿态分析可视化工具。", "en": "A motion capture and pose analysis visualization tool based on MMPose." },
-            "tags": [
-              "MMPose",
-              "AI",
-              "Visualization"
-            ],
-            "image": {
-              "src": "https://picsum.photos/800/450?random=33",
-              "alt": { "zh": "Pose Analysis 封面", "en": "Pose Analysis Cover" }
-            },
-            "updatedAt": "2025-09-04T11:30:00Z"
-          },
-          {
-            "title": { "zh": "结构优化助手", "en": "Structural Optimization Assistant" },
-            "summary": { "zh": "面向土木工程的参数化优化小工具，支持多目标对比。", "en": "A parametric optimization tool for civil engineering with multi-objective comparison support." },
-            "tags": [
-              "Civil",
-              "Optimization",
-              "Python"
-            ],
-            "image": {
-              "src": "https://picsum.photos/800/450?random=34",
-              "alt": { "zh": "结构优化助手封面", "en": "Structural Optimization Assistant Cover" }
-            },
-            "updatedAt": "2025-08-29T10:15:00Z"
-          },
-          {
-            "title": { "zh": "资料整理与知识库", "en": "Documentation & Knowledge Base" },
-            "summary": { "zh": "把工程实践、读书笔记与方法论沉淀为可检索的知识库。", "en": "Consolidating engineering practices, reading notes, and methodologies into a searchable knowledge base." },
-            "tags": [
-              "Knowledge Base",
-              "Docs",
-              "Indexing"
-            ],
-            "image": {
-              "src": "https://picsum.photos/800/450?random=35",
-              "alt": { "zh": "知识库封面", "en": "Knowledge Base Cover" }
-            },
-            "updatedAt": "2025-08-26T16:45:00Z"
-          },
-          {
-            "title": { "zh": "体育数据看板", "en": "Sports Data Dashboard" },
-            "summary": { "zh": "训练与体测数据的多维度可视化，关注趋势与恢复。", "en": "Multi-dimensional visualization of training and physical test data, focusing on trends and recovery." },
-            "tags": [
-              "Dashboard",
-              "Data Viz",
-              "Sports"
-            ],
-            "image": {
-              "src": "https://picsum.photos/800/450?random=36",
-              "alt": { "zh": "体育数据看板封面", "en": "Sports Dashboard Cover" }
-            },
-            "updatedAt": "2025-09-01T08:20:00Z"
-          }
-        ]
-      }
+      "id": "2025-09-05-ai-gym-v2",
+      "date": "2025-09-05",
+      "title": { "zh": "AI Gym - 双杠评分原型 V2", "en": "AI Gym - Parallel Bars Scoring Prototype V2" },
+      "summary": { "zh": "基于关键点检测与时序分类的体测评分 Demo，优化了姿态稳定性。", "en": "Physical test scoring demo based on keypoint detection and time series classification, with improved pose stability." },
+      "tags": ["Computer Vision", "Angular", "MMPose"],
+      "link": "https://github.com/one-hong-084/AI_gym",
+      "image": "https://picsum.photos/800/450?image=21"
+    },
+    {
+      "id": "2025-08-20-personal-website",
+      "date": "2025-08-20",
+      "title": { "zh": "个人展示网站", "en": "Personal Portfolio Website" },
+      "summary": { "zh": "Angular + Ghost CMS 的成长档案馆，配置驱动、少即是多。", "en": "Growth archive built with Angular + Ghost CMS, configuration-driven with minimal design philosophy." },
+      "tags": ["Angular", "Ghost CMS", "MongoDB"],
+      "link": "https://xxlab.top",
+      "image": "https://picsum.photos/800/450?image=22"
+    },
+    {
+      "id": "2025-07-15-pose-analysis",
+      "date": "2025-07-15",
+      "title": { "zh": "Pose Analysis 工具", "en": "Pose Analysis Tool" },
+      "summary": { "zh": "基于 MMPose 的动作捕捉与姿态分析可视化工具。", "en": "A visualization tool for motion capture and pose analysis based on MMPose." },
+      "tags": ["MMPose", "AI", "Visualization"],
+      "link": "https://github.com/one-hong-084/pose-analysis",
+      "image": "https://picsum.photos/800/450?image=23"
+    },
+    {
+      "id": "2025-06-10-sports-dashboard",
+      "date": "2025-06-10",
+      "title": { "zh": "体育数据看板", "en": "Sports Data Dashboard" },
+      "summary": { "zh": "训练与体测数据的多维度可视化，关注趋势与恢复。", "en": "Multi-dimensional visualization of training and physical test data, focusing on trends and recovery." },
+      "tags": ["Dashboard", "Data Viz", "Sports"],
+      "link": "/projects/sports-dashboard",
+      "image": "https://picsum.photos/800/450?image=25"
+    },
+    {
+      "id": "2024-11-15-mobile-fitness",
+      "date": "2024-11-15",
+      "title": { "zh": "移动端健身App", "en": "Mobile Fitness App" },
+      "summary": { "zh": "使用React Native开发跨平台健身追踪应用，支持实时数据同步。", "en": "Cross-platform fitness tracking app developed with React Native, supporting real-time data sync." },
+      "tags": ["React Native", "Mobile", "Fitness"],
+      "link": "/projects/mobile-fitness-app",
+      "image": "https://picsum.photos/800/450?image=26"
+    },
+    {
+      "id": "2024-09-20-sports-analytics",
+      "date": "2024-09-20",
+      "title": { "zh": "体育数据分析系统", "en": "Sports Data Analysis System" },
+      "summary": { "zh": "构建基于Python的运动员表现数据分析平台，提供深度洞察。", "en": "Built athlete performance data analysis platform using Python, providing deep insights." },
+      "tags": ["Python", "Data Analysis", "Sports"],
+      "link": "/projects/sports-analytics",
+      "image": "https://picsum.photos/800/450?image=27"
+    },
+    {
+      "id": "2023-12-05-first-ai-app",
+      "date": "2023-12-05",
+      "title": { "zh": "首个AI项目上线", "en": "First AI Project Launch" },
+      "summary": { "zh": "开发并上线第一个基于深度学习的图像识别应用，开启AI学习之旅。", "en": "Developed and launched first deep learning-based image recognition application, starting the AI learning journey." },
+      "tags": ["Deep Learning", "Computer Vision", "First Project"],
+      "link": "/projects/first-ai-app",
+      "image": "https://picsum.photos/800/450?image=28"
+    },
+    {
+      "id": "2023-08-15-structural-optimizer",
+      "date": "2023-08-15",
+      "title": { "zh": "结构优化助手", "en": "Structural Optimization Assistant" },
+      "summary": { "zh": "面向土木工程的参数化优化小工具，支持多目标对比分析。", "en": "Parametric optimization tool for civil engineering with multi-objective comparison support." },
+      "tags": ["Civil Engineering", "Optimization", "Python"],
+      "link": "/projects/structural-optimizer",
+      "image": "https://picsum.photos/800/450?image=24"
     }
   ]
 }

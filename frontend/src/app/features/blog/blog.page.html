@@ -7,11 +7,12 @@
           <app-card *ngFor="let item of g.items; trackBy: trackById"
             [lang]="(lang.current$ | async) || 'zh'"
             [title]="item.title" 
-            [summary]="item.summary" 
+            [summary]="item.excerpt" 
             [image]="item.image"
-            [date]="item.date" 
+            [date]="item.updatedAt" 
             [tags]="item.tags" 
-            [link]="item.link">
+            [link]="'/blog/' + item.slug"
+            (click)="onBlogClick(item.id)">
           </app-card>
         </div>
       </section>

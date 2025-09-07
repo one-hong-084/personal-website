@@ -5,6 +5,7 @@ import { Observable, map } from 'rxjs';
 import { LanguageService } from '../../shared/services/language.service';
 import { TimelineService } from '../../shared/services/timeline.service';
 import { TimelineItem } from '../../shared/models/timeline.model';
+import { ClickTrackingService } from '../../shared/services/click-tracking.service';
 import { CardComponent } from '../../shared/components/card/card.component';
 
 type YearGroup = { year: string; items: TimelineItem[] };
@@ -20,7 +21,11 @@ type YearGroup = { year: string; items: TimelineItem[] };
 export class TimelinePage {
   groups$!: Observable<YearGroup[]>;
 
-  constructor(private timeline: TimelineService, public lang: LanguageService) {
+  constructor(
+    private timeline: TimelineService, 
+    public lang: LanguageService,
+    private clickTracker: ClickTrackingService
+  ) {
     this.groups$ = this.timeline.list().pipe(
       map(items => {
         const mapByYear = new Map<string, TimelineItem[]>();
@@ -38,4 +43,11 @@ export class TimelinePage {
   }
 
   trackById = (_: number, item: TimelineItem) => item.id;
+
+  /**
+   * 处理时间线点击事件
+   */
+  onTimelineClick(timelineId: string): void {
+    this.clickTracker.trackTimelineClick(timelineId);
+  }
 }

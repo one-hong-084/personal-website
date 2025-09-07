@@ -3,16 +3,12 @@
    [attr.target]="link && link.startsWith('http') ? '_blank' : null" 
    rel="noopener">
   <div class="thumb">
-    <img [src]="image || 'assets/images/placeholder.webp'" [alt]="lang === 'zh' ? title.zh : title.en" loading="lazy">
+    <img [src]="getImageSrc()" [alt]="getTitle()" loading="lazy" (error)="onImageError($event)">
   </div>
   <div class="meta">
-    <div class="row" *ngIf="date || (tags?.length)">
-      <span class="date" *ngIf="date">{{ date }}</span>
-      <span class="tags" *ngIf="tags?.length">
-        <span class="tag" *ngFor="let t of tags">#{{ t }}</span>
-      </span>
-    </div>
-    <h3 class="title">{{ lang === 'zh' ? title.zh : title.en }}</h3>
-    <p class="summary">{{ lang === 'zh' ? summary.zh : summary.en }}</p>
+    <h3 class="title">{{ getTitle() }}</h3>
+    <p class="summary">{{ getSummary() }}</p>
+    <span class="date" *ngIf="date">{{ date }}</span>
+    <a class="link" *ngIf="link" [href]="link" [target]="link.startsWith('http') ? '_blank' : null" [rel]="link.startsWith('http') ? 'noreferrer' : null">{{ getLinkText() }}</a>
   </div>
 </a>

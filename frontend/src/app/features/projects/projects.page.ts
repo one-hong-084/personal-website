@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { Observable, map } from 'rxjs';
 import { ProjectService } from '../../shared/services/project.service';
 import { LanguageService } from '../../shared/services/language.service';
+import { ClickTrackingService } from '../../shared/services/click-tracking.service';
 import { CardComponent } from '../../shared/components/card/card.component';
 import { Item } from '../../shared/services/article.service';
 
@@ -20,7 +21,11 @@ type YearGroup = { year: string; items: Item[] };
 export class ProjectsPage {
   groups$!: Observable<YearGroup[]>;
 
-  constructor(private svc: ProjectService, public lang: LanguageService) {
+  constructor(
+    private svc: ProjectService, 
+    public lang: LanguageService,
+    private clickTracker: ClickTrackingService
+  ) {
     this.groups$ = this.svc.list().pipe(
       map(items => {
         const mapByYear = new Map<string, Item[]>();
@@ -37,4 +42,11 @@ export class ProjectsPage {
   }
 
   trackById = (_: number, item: Item) => item.id;
+
+  /**
+   * 处理项目点击事件
+   */
+  onProjectClick(projectId: string): void {
+    this.clickTracker.trackClick(projectId);
+  }
 }

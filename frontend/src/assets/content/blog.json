@@ -1,84 +1,158 @@
 {
-  "sections": [
+  "items": [
     {
-      "type": "card-list",
-      "inputs": {
-        "title": { "zh": "最新文章", "en": "Latest Articles" },
-        "items": [
-          {
-            "id": "ghost-cms-notes",
-            "title": { "zh": "Ghost CMS 接入踩坑记录", "en": "Ghost CMS Integration Pitfalls & Solutions" },
-            "excerpt": { "zh": "从 Content API 拉数据到 Angular 的最小实现与 CORS 兜底。", "en": "Minimal implementation of pulling data from Content API to Angular with CORS fallback." },
-            "slug": "ghost-cms-notes",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=41",
-              "alt": { "zh": "Ghost CMS 封面", "en": "Ghost CMS Cover" }
-            },
-            "readingMinutes": 6,
-            "updatedAt": "2025-09-05T09:00:00Z"
-          },
-          {
-            "id": "angular-animation",
-            "title": { "zh": "Angular 动效最佳实践", "en": "Angular Animation Best Practices" },
-            "excerpt": { "zh": "不引第三方库，如何用动画 API 做轻盈过渡并守住 LCP/CLS。", "en": "How to create smooth transitions with Animation API without third-party libraries while maintaining LCP/CLS." },
-            "slug": "angular-animation",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=42",
-              "alt": { "zh": "Angular 动效", "en": "Angular Animation" }
-            },
-            "readingMinutes": 5,
-            "updatedAt": "2025-09-03T12:00:00Z"
-          },
-          {
-            "id": "timeline-design",
-            "title": { "zh": "时间线配置化设计", "en": "Configurable Timeline Design" },
-            "excerpt": { "zh": "把成长节点数据化，复用 About 页思路渲染 Timeline。", "en": "Data-driven growth milestones, reusing About page approach to render Timeline." },
-            "slug": "timeline-design",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=43",
-              "alt": { "zh": "时间线封面", "en": "Timeline Cover" }
-            },
-            "readingMinutes": 4,
-            "updatedAt": "2025-09-04T08:30:00Z"
-          },
-          {
-            "id": "knowledge-indexing",
-            "title": { "zh": "个人知识库的索引策略", "en": "Personal Knowledge Base Indexing Strategy" },
-            "excerpt": { "zh": "如何给笔记与项目建立轻量索引，提高检索命中与复用。", "en": "How to establish lightweight indexing for notes and projects to improve search accuracy and reusability." },
-            "slug": "knowledge-indexing",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=44",
-              "alt": { "zh": "知识库索引", "en": "Knowledge Base Indexing" }
-            },
-            "readingMinutes": 7,
-            "updatedAt": "2025-08-30T15:45:00Z"
-          },
-          {
-            "id": "civic-engineering-to-ai",
-            "title": { "zh": "从土木工程到 AI 的迁移路径", "en": "Transition Path from Civil Engineering to AI" },
-            "excerpt": { "zh": "技能转译、项目选择与作品集构建的实践建议。", "en": "Practical advice on skill translation, project selection, and portfolio building." },
-            "slug": "civic-engineering-to-ai",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=45",
-              "alt": { "zh": "转型路径", "en": "Transition Path" }
-            },
-            "readingMinutes": 8,
-            "updatedAt": "2025-08-28T10:10:00Z"
-          },
-          {
-            "id": "reading-habits",
-            "title": { "zh": "阅读到行动：我的复盘模板", "en": "From Reading to Action: My Review Template" },
-            "excerpt": { "zh": "从书摘到任务，如何用 GROW 框架落地成习惯。", "en": "From book excerpts to tasks, how to implement habits using the GROW framework." },
-            "slug": "reading-habits",
-            "image": {
-              "src": "https://picsum.photos/800/450?random=46",
-              "alt": { "zh": "阅读复盘", "en": "Reading Review" }
-            },
-            "readingMinutes": 5,
-            "updatedAt": "2025-09-01T07:20:00Z"
-          }
-        ]
-      }
+      "id": "2025-09-05-ghost-cms-notes",
+      "date": "2025-09-05",
+      "title": { "zh": "Ghost CMS 接入踩坑记录", "en": "Ghost CMS Integration Pitfalls & Solutions" },
+      "excerpt": { "zh": "从 Content API 拉数据到 Angular 的最小实现与 CORS 兜底。", "en": "Minimal implementation of pulling data from Content API to Angular with CORS fallback." },
+      "slug": "ghost-cms-notes",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=31",
+        "alt": { "zh": "Ghost CMS 封面", "en": "Ghost CMS Cover" }
+      },
+      "readingMinutes": 6,
+      "updatedAt": "2025-09-05T09:00:00Z",
+      "tags": ["CMS", "Angular", "API"]
+    },
+    {
+      "id": "2025-09-03-angular-animation",
+      "date": "2025-09-03",
+      "title": { "zh": "Angular 动效最佳实践", "en": "Angular Animation Best Practices" },
+      "excerpt": { "zh": "不引第三方库，如何用动画 API 做轻盈过渡并守住 LCP/CLS。", "en": "How to create smooth transitions with Animation API without third-party libraries while maintaining LCP/CLS." },
+      "slug": "angular-animation",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=32",
+        "alt": { "zh": "Angular 动效", "en": "Angular Animation" }
+      },
+      "readingMinutes": 5,
+      "updatedAt": "2025-09-03T12:00:00Z",
+      "tags": ["Angular", "Animation", "Performance"]
+    },
+    {
+      "id": "2025-09-04-timeline-design",
+      "date": "2025-09-04",
+      "title": { "zh": "时间线配置化设计", "en": "Configurable Timeline Design" },
+      "excerpt": { "zh": "把成长节点数据化，复用 About 页思路渲染 Timeline。", "en": "Data-driven growth milestones, reusing About page approach to render Timeline." },
+      "slug": "timeline-design",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=33",
+        "alt": { "zh": "时间线封面", "en": "Timeline Cover" }
+      },
+      "readingMinutes": 4,
+      "updatedAt": "2025-09-04T08:30:00Z",
+      "tags": ["Design", "Data", "Timeline"]
+    },
+    {
+      "id": "2025-08-30-knowledge-indexing",
+      "date": "2025-08-30",
+      "title": { "zh": "个人知识库的索引策略", "en": "Personal Knowledge Base Indexing Strategy" },
+      "excerpt": { "zh": "如何给笔记与项目建立轻量索引，提高检索命中与复用。", "en": "How to establish lightweight indexing for notes and projects to improve search accuracy and reusability." },
+      "slug": "knowledge-indexing",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=34",
+        "alt": { "zh": "知识库索引", "en": "Knowledge Base Indexing" }
+      },
+      "readingMinutes": 7,
+      "updatedAt": "2025-08-30T15:45:00Z",
+      "tags": ["Knowledge", "Indexing", "Productivity"]
+    },
+    {
+      "id": "2025-08-28-civic-engineering-to-ai",
+      "date": "2025-08-28",
+      "title": { "zh": "从土木工程到 AI 的迁移路径", "en": "Transition Path from Civil Engineering to AI" },
+      "excerpt": { "zh": "技能转译、项目选择与作品集构建的实践建议。", "en": "Practical advice on skill translation, project selection, and portfolio building." },
+      "slug": "civic-engineering-to-ai",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=35",
+        "alt": { "zh": "转型路径", "en": "Transition Path" }
+      },
+      "readingMinutes": 8,
+      "updatedAt": "2025-08-28T10:10:00Z",
+      "tags": ["Career", "AI", "Transition"]
+    },
+    {
+      "id": "2025-09-01-reading-habits",
+      "date": "2025-09-01",
+      "title": { "zh": "阅读到行动：我的复盘模板", "en": "From Reading to Action: My Review Template" },
+      "excerpt": { "zh": "从书摘到任务，如何用 GROW 框架落地成习惯。", "en": "From book excerpts to tasks, how to implement habits using the GROW framework." },
+      "slug": "reading-habits",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=36",
+        "alt": { "zh": "阅读复盘", "en": "Reading Review" }
+      },
+      "readingMinutes": 5,
+      "updatedAt": "2025-09-01T07:20:00Z",
+      "tags": ["Reading", "Habits", "GROW"]
+    },
+    {
+      "id": "2024-11-15-ai-education",
+      "date": "2024-11-15",
+      "title": { "zh": "AI 赋能体育教学的五个关键点", "en": "Five Keys for AI-Enabled PE Teaching" },
+      "excerpt": { "zh": "从检测、反馈到评价的最小闭环实践", "en": "From detection to feedback and assessment" },
+      "slug": "ai-education-keys",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=37",
+        "alt": { "zh": "AI 体育教学", "en": "AI PE Teaching" }
+      },
+      "readingMinutes": 6,
+      "updatedAt": "2024-11-15T09:00:00Z",
+      "tags": ["AI", "Education", "PE"]
+    },
+    {
+      "id": "2024-08-22-personal-site-ia",
+      "date": "2024-08-22",
+      "title": { "zh": "个人站点的信息架构是怎样定的？", "en": "How I designed my site's IA" },
+      "excerpt": { "zh": "从目标到模块，再到导航与聚合", "en": "From goals to modules and navigation" },
+      "slug": "site-ia",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=38",
+        "alt": { "zh": "信息架构", "en": "Information Architecture" }
+      },
+      "readingMinutes": 5,
+      "updatedAt": "2024-08-22T14:30:00Z",
+      "tags": ["IA", "Web", "Design"]
+    },
+    {
+      "id": "2023-12-10-graduation-journey",
+      "date": "2023-12-10",
+      "title": { "zh": "硕士学位毕业：我的学习之路", "en": "Master's Graduation: My Learning Journey" },
+      "excerpt": { "zh": "从土木工程到计算机视觉的跨领域学习经历与感悟。", "en": "Cross-disciplinary learning experience from civil engineering to computer vision." },
+      "slug": "graduation-journey",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=39",
+        "alt": { "zh": "毕业典礼", "en": "Graduation Ceremony" }
+      },
+      "readingMinutes": 8,
+      "updatedAt": "2023-12-10T16:00:00Z",
+      "tags": ["Education", "Career", "Learning"]
+    },
+    {
+      "id": "2023-09-15-internship-experience",
+      "date": "2023-09-15",
+      "title": { "zh": "AI公司实习经历：从理论到实践", "en": "AI Company Internship: From Theory to Practice" },
+      "excerpt": { "zh": "在知名AI公司实习的收获，机器学习模型优化的实战经验。", "en": "Insights from interning at a leading AI company, hands-on experience in ML model optimization." },
+      "slug": "internship-experience",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=40",
+        "alt": { "zh": "实习经历", "en": "Internship Experience" }
+      },
+      "readingMinutes": 6,
+      "updatedAt": "2023-09-15T10:30:00Z",
+      "tags": ["Internship", "AI", "Experience"]
+    },
+    {
+      "id": "2023-06-20-first-ai-project",
+      "date": "2023-06-20",
+      "title": { "zh": "首个AI项目上线：深度学习入门", "en": "First AI Project Launch: Deep Learning Introduction" },
+      "excerpt": { "zh": "开发并上线第一个基于深度学习的图像识别应用的心路历程。", "en": "The journey of developing and launching my first deep learning-based image recognition application." },
+      "slug": "first-ai-project",
+      "image": {
+        "src": "https://picsum.photos/800/450?image=41",
+        "alt": { "zh": "首个AI项目", "en": "First AI Project" }
+      },
+      "readingMinutes": 7,
+      "updatedAt": "2023-06-20T14:20:00Z",
+      "tags": ["AI", "Deep Learning", "First Project"]
     }
   ]
 }

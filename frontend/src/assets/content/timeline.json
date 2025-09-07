@@ -1,47 +1,130 @@
 {
   "items": [
     {
-      "date": "2025-09-06T09:30:00Z",
+      "id": "2024-12-15-ai-research",
+      "date": "2024-12-15",
+      "title": { "zh": "AI 研究论文发表", "en": "AI Research Paper Published" },
+      "summary": { "zh": "在计算机视觉领域发表关于姿态估计优化的研究论文。", "en": "Published research paper on pose estimation optimization in computer vision." },
+      "category": "research",
+      "link": "/blog/ai-research-paper",
+      "image": "https://picsum.photos/800/450?image=1"
+    },
+    {
+      "id": "2024-11-20-tech-conference",
+      "date": "2024-11-20",
+      "title": { "zh": "技术大会演讲", "en": "Tech Conference Presentation" },
+      "summary": { "zh": "在AI开发者大会上分享计算机视觉在体育领域的应用。", "en": "Shared computer vision applications in sports at AI Developer Conference." },
+      "category": "speaking",
+      "link": "/blog/tech-conference-2024",
+      "image": "https://picsum.photos/800/450?image=2"
+    },
+    {
+      "id": "2024-10-08-mobile-app",
+      "date": "2024-10-08",
+      "title": { "zh": "移动端健身App开发", "en": "Mobile Fitness App Development" },
+      "summary": { "zh": "使用React Native开发跨平台健身追踪应用。", "en": "Developed cross-platform fitness tracking app using React Native." },
+      "category": "project",
+      "link": "/projects/mobile-fitness-app",
+      "image": "https://picsum.photos/800/450?image=3"
+    },
+    {
+      "id": "2024-09-12-data-analysis",
+      "date": "2024-09-12",
+      "title": { "zh": "体育数据分析系统", "en": "Sports Data Analysis System" },
+      "summary": { "zh": "构建基于Python的运动员表现数据分析平台。", "en": "Built athlete performance data analysis platform using Python." },
+      "category": "project",
+      "link": "/projects/sports-analytics",
+      "image": "https://picsum.photos/800/450?image=4"
+    },
+    {
+      "id": "2024-08-25-open-source",
+      "date": "2024-08-25",
+      "title": { "zh": "开源项目贡献", "en": "Open Source Contribution" },
+      "summary": { "zh": "为MMPose项目贡献关键点检测算法优化代码。", "en": "Contributed keypoint detection algorithm optimization to MMPose project." },
+      "category": "open-source",
+      "link": "/blog/open-source-contribution",
+      "image": "https://picsum.photos/800/450?image=5"
+    },
+    {
+      "id": "2023-12-10-graduation",
+      "date": "2023-12-10",
+      "title": { "zh": "硕士学位毕业", "en": "Master's Degree Graduation" },
+      "summary": { "zh": "完成计算机科学与技术硕士学位，专攻计算机视觉。", "en": "Completed Master's degree in Computer Science, specializing in computer vision." },
+      "category": "education",
+      "link": "/blog/graduation-journey",
+      "image": "https://picsum.photos/800/450?image=6"
+    },
+    {
+      "id": "2023-09-15-internship",
+      "date": "2023-09-15",
+      "title": { "zh": "AI公司实习经历", "en": "AI Company Internship" },
+      "summary": { "zh": "在知名AI公司实习，参与机器学习模型优化项目。", "en": "Interned at leading AI company, worked on machine learning model optimization." },
+      "category": "work",
+      "link": "/blog/internship-experience",
+      "image": "https://picsum.photos/800/450?image=7"
+    },
+    {
+      "id": "2023-06-20-first-project",
+      "date": "2023-06-20",
+      "title": { "zh": "首个AI项目上线", "en": "First AI Project Launch" },
+      "summary": { "zh": "开发并上线第一个基于深度学习的图像识别应用。", "en": "Developed and launched first deep learning-based image recognition application." },
+      "category": "project",
+      "link": "/projects/first-ai-app",
+      "image": "https://picsum.photos/800/450?image=8"
+    },
+    {
+      "id": "2025-09-06-home",
+      "date": "2025-09-06",
       "title": { "zh": "Home 首页完成：Hero + 精选", "en": "Home Page Complete: Hero + Featured" },
-      "description": { "zh": "接入 Hero 文案配置，Projects/Blog 自动精选（最近三条）。", "en": "Integrated Hero content configuration, automatic featured Projects/Blog (latest three)." },
+      "summary": { "zh": "接入 Hero 文案配置，Projects/Blog 自动精选（最近三条）。", "en": "Integrated Hero content configuration, automatic featured Projects/Blog (latest three)." },
       "category": "project",
       "link": "#",
-      "image": { "src": "https://picsum.photos/800/450?random=51", "alt": { "zh": "Home Preview", "en": "Home Preview" } }
+      "image": "https://picsum.photos/800/450?image=9"
     },
     {
-      "date": "2025-09-05T14:00:00Z",
+      "id": "2025-09-05-ai-gym",
+      "date": "2025-09-05",
       "title": { "zh": "AI Gym Demo 改版", "en": "AI Gym Demo Redesign" },
-      "description": { "zh": "双杠评分 Demo 升级：姿态关键点稳定性优化。", "en": "Parallel bars scoring demo upgrade: pose keypoint stability optimization." },
+      "summary": { "zh": "双杠评分 Demo 升级：姿态关键点稳定性优化。", "en": "Parallel bars scoring demo upgrade: pose keypoint stability optimization." },
       "category": "project",
-      "image": { "src": "https://picsum.photos/800/450?random=52", "alt": { "zh": "AI Gym", "en": "AI Gym" } }
+      "link": "/projects/ai-gym",
+      "image": "https://picsum.photos/800/450?image=10"
     },
     {
-      "date": "2025-09-04T08:30:00Z",
+      "id": "2025-09-04-timeline-config",
+      "date": "2025-09-04",
       "title": { "zh": "时间线配置化方案确定", "en": "Timeline Configuration Solution Finalized" },
-      "description": { "zh": "沿用 About 的 Section 思路，数据→模板→渲染。", "en": "Following About page's Section approach: data → template → rendering." },
+      "summary": { "zh": "沿用 About 的 Section 思路，数据→模板→渲染。", "en": "Following About page's Section approach: data → template → rendering." },
       "category": "design",
-      "image": { "src": "https://picsum.photos/800/450?random=53", "alt": { "zh": "Timeline Config", "en": "Timeline Config" } }
+      "link": "/blog/timeline-design",
+      "image": "https://picsum.photos/800/450?image=11"
     },
     {
-      "date": "2025-09-03T12:00:00Z",
+      "id": "2025-09-03-animation",
+      "date": "2025-09-03",
       "title": { "zh": "Angular 动效基线", "en": "Angular Animation Baseline" },
-      "description": { "zh": "首屏淡入+上移动效，守住 LCP/CLS。", "en": "First screen fade-in + upward motion effects while maintaining LCP/CLS." },
+      "summary": { "zh": "首屏淡入+上移动效，守住 LCP/CLS。", "en": "First screen fade-in + upward motion effects while maintaining LCP/CLS." },
       "category": "frontend",
-      "image": { "src": "https://picsum.photos/800/450?random=54", "alt": { "zh": "Animation", "en": "Animation" } }
+      "link": "/blog/angular-animation",
+      "image": "https://picsum.photos/800/450?image=12"
     },
     {
-      "date": "2025-09-01T07:20:00Z",
+      "id": "2025-09-01-grow",
+      "date": "2025-09-01",
       "title": { "zh": "阅读到行动：GROW 模板", "en": "From Reading to Action: GROW Template" },
-      "description": { "zh": "把阅读摘要转成行动卡，次周复盘。", "en": "Converting reading summaries into action cards, weekly review." },
+      "summary": { "zh": "把阅读摘要转成行动卡，次周复盘。", "en": "Converting reading summaries into action cards, weekly review." },
       "category": "life",
-      "image": { "src": "https://picsum.photos/800/450?random=55", "alt": { "zh": "GROW", "en": "GROW" } }
+      "link": "/blog/reading-habits",
+      "image": "https://picsum.photos/800/450?image=13"
     },
     {
-      "date": "2025-08-28T10:10:00Z",
+      "id": "2025-08-28-kickoff",
+      "date": "2025-08-28",
       "title": { "zh": "个人站点立项", "en": "Personal Website Project Launch" },
-      "description": { "zh": ""少即是多"的 MVP 目标与路线。", "en": "'Less is more' MVP goals and roadmap." },
+      "summary": { "zh": "\"少即是多\"的 MVP 目标与路线。", "en": "'Less is more' MVP goals and roadmap." },
       "category": "project",
-      "image": { "src": "https://picsum.photos/800/450?random=56", "alt": { "zh": "Kickoff", "en": "Kickoff" } }
+      "link": "/projects/site-v1",
+      "image": "https://picsum.photos/800/450?image=14"
     }
   ]
 }

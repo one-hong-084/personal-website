@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { I18nService } from './i18n.service';
+import { RouterModule } from '@angular/router';
+import { LanguageService } from './services/language.service';
+import { AsyncPipe } from '@angular/common';
 
 interface HeroInputs {
   headline: { zh: string; en: string };
@@ -10,16 +12,16 @@ interface HeroInputs {
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AsyncPipe, RouterModule],
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
   @Input() inputs!: HeroInputs;
 
-  constructor(private i18nService: I18nService) {}
+  constructor(public lang: LanguageService) {}
 
   getLocalizedText(text: { zh: string; en: string }): string {
-    return this.i18nService.getLocalizedContent(text);
+    return this.lang.value === 'zh' ? text.zh : text.en;
   }
 }
