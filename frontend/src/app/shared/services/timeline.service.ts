@@ -5,17 +5,17 @@ import { TimelineItem } from '../models/timeline.model';
 
 @Injectable({ providedIn: 'root' })
 export class TimelineService {
-  private readonly url = 'assets/data/timeline.json';
+  private readonly url = 'assets/content/timeline.json';
 
   constructor(private http: HttpClient) {}
 
   list(): Observable<TimelineItem[]> {
-    return this.http.get<TimelineItem[]>(this.url).pipe(
-      map(items =>
-        [...items].sort(
+    return this.http.get<{items: TimelineItem[]}>(this.url).pipe(
+      map(response => {
+        return response.items.sort(
           (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-        )
-      )
+        );
+      })
     );
   }
 

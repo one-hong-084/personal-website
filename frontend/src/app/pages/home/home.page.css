@@ -18,7 +18,7 @@
   }
 
   /* Card Grid Styles */
-  .card-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .card-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   .section-title { margin: 0 0 8px 0; }
   .muted { color: var(--muted); }
   

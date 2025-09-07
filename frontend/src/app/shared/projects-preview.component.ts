@@ -40,7 +40,7 @@ interface ProjectsPreviewInputs {
     </section>
   `,
   styles: [`
-    .wrap{ max-width:920px; margin:32px auto; padding:0 16px; }
+    .wrap{ max-width:1000px; margin:0 auto; padding:0 16px; }
     h2{ margin:0 0 12px; }
     .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; }
     .card{ border:1px solid var(--border); border-radius:12px; background:var(--bg); padding:12px; transition:transform .15s ease, box-shadow .15s ease; }

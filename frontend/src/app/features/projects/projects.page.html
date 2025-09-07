@@ -11,7 +11,8 @@
             [image]="item.image"
             [date]="item.date" 
             [tags]="item.tags" 
-            [link]="item.link">
+            [link]="item.link"
+            (click)="onProjectClick(item.id)">
           </app-card>
         </div>
       </section>

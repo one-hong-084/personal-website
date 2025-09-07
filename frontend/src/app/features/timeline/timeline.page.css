@@ -4,7 +4,7 @@
   padding: 0 16px; 
 }
 
-.card-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.card-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 .year { margin: 16px 0 8px; font-size: 1.25rem; font-weight: 700; }
 .muted { color: var(--muted); }
 .year-block + .year-block { margin-top: 8px; }
